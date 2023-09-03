@@ -18,7 +18,7 @@ const loginUser = async (req, res, next) => {
       .cookie("jwt", token, {
         maxAge: 3600000 * 24 * 7,
         httpOnly: true,
-        sameSite: true,
+        sameSite: false, // браузер говорит, что  куки пришли не с оригинального сайта
       })
       .send({ message: "Авторизация прошла успешно", token }); // Добавил токен в тело, чтоб не переделывать фронт под куки
   } catch (err) {
