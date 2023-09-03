@@ -24,7 +24,7 @@ const corsAllow = (req, res, next) => {
   );
   res.header(
     "Access-Control-Allow-Methods",
-    "PUT,POST,GET,DELETE,OPTIONS,PATCH"
+    "PUT,POST,GET,DELETE,OPTIONS,PATCH",
   );
 
   const { origin } = req.headers;
