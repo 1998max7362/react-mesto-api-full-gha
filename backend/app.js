@@ -15,8 +15,7 @@ import auth from "./src/middlewares/auth.js";
 import WrongRouteError from "./src/middlewares/Errors/customErrors/WrongRouteError.js";
 import { requestLogger, errorLogger } from "./src/middlewares/logger.js";
 
-const { PORT = 3000, MONGODB_URL = "mongodb://0.0.0.0:27017/mestodb " } =
-  process.env;
+const { PORT = 3000, MONGODB_URL = "mongodb://0.0.0.0:27017/mestodb " } = process.env;
 
 try {
   await mongoose.connect(MONGODB_URL);
