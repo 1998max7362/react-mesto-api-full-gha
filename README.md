@@ -9,7 +9,7 @@
 
 ## Ссылки на проект
 
-IP-адрес 51.250.14.130
+IP 51.250.14.130
 
 Frontend https://NobodyMaximProject15.nomoredomainsicu.ru
 
