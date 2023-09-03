@@ -15,7 +15,8 @@ import auth from "./src/middlewares/auth.js";
 import WrongRouteError from "./src/middlewares/Errors/customErrors/WrongRouteError.js";
 import { requestLogger, errorLogger } from "./src/middlewares/logger.js";
 
-const { PORT = 3000, MONGODB_URL = "mongodb://0.0.0.0:27017/mestodb " } = process.env;
+const { PORT = 3000, MONGODB_URL = "mongodb://0.0.0.0:27017/mestodb " } =
+  process.env;
 
 try {
   await mongoose.connect(MONGODB_URL);
@@ -33,6 +34,11 @@ app.all("*", corsAllow);
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(requestLogger);
+app.get("/crash-test", () => {
+  setTimeout(() => {
+    throw new Error("Сервер сейчас упадёт");
+  }, 0);
+});
 app.use("/", authRouter);
 app.use("/users", auth, userRouter);
 app.use("/cards", auth, cardRouter);
