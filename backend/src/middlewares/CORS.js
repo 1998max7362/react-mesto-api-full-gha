@@ -10,15 +10,22 @@ const allowedCors = [
   "https://NobodyMaximProject15.nomoredomainsicu.ru",
   "http://NobodyMaximProject15.nomoredomainsicu.ru/",
   "https://NobodyMaximProject15.nomoredomainsicu.ru/",
+  "http://nobodymaximproject15.nomoredomainsicu.ru",
+  "https://nobodymaximproject15.nomoredomainsicu.ru",
+  "http://nobodymaximproject15.nomoredomainsicu.ru/",
+  "https://nobodymaximproject15.nomoredomainsicu.ru/",
 ];
 
 // eslint-disable-next-line consistent-return
 const corsAllow = (req, res, next) => {
   res.header(
     "Access-Control-Allow-Headers",
-    "Content-Type,Content-Length, Authorization, Accept,X-Requested-With",
+    "Content-Type,Content-Length, Authorization, Accept,X-Requested-With"
   );
-  res.header("Access-Control-Allow-Methods", "PUT,POST,GET,DELETE,OPTIONS,PATCH");
+  res.header(
+    "Access-Control-Allow-Methods",
+    "PUT,POST,GET,DELETE,OPTIONS,PATCH"
+  );
 
   const { origin } = req.headers;
   if (allowedCors.includes(origin)) {
