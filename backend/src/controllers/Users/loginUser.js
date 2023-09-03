@@ -23,7 +23,7 @@ const loginUser = async (req, res, next) => {
         // this attempt to set a cookie via a set-cookie header was blocked because it had the
         //  {PH1} attribute but came from a cross-site response wich was not the response to
         //  a top-level navigation
-        sameSite: "None",
+        sameSite: "none",
       })
       .send({ message: "Авторизация прошла успешно", token }); // Добавил токен в тело, чтоб не переделывать фронт под куки
   } catch (err) {
