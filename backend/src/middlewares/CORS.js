@@ -6,6 +6,10 @@ const allowedCors = [
   "https://localhost:3000",
   "http://localhost:3001/",
   "https://localhost:3001/",
+  "http://NobodyMaximProject15.nomoredomainsicu.ru",
+  "https://NobodyMaximProject15.nomoredomainsicu.ru",
+  "http://NobodyMaximProject15.nomoredomainsicu.ru/",
+  "https://NobodyMaximProject15.nomoredomainsicu.ru/",
 ];
 
 // eslint-disable-next-line consistent-return
