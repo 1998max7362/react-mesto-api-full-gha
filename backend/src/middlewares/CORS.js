@@ -20,7 +20,7 @@ const allowedCors = [
 const corsAllow = (req, res, next) => {
   res.header(
     "Access-Control-Allow-Headers",
-    "Content-Type,Content-Length, Authorization, Accept,X-Requested-With"
+    "Content-Type,Content-Length, Authorization, Accept,X-Requested-With",
   );
   res.header(
     "Access-Control-Allow-Methods",
