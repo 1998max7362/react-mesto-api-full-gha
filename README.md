@@ -9,8 +9,8 @@
 
 ## Ссылки на проект
 
-IP-адрес x.x.x.x
+IP-адрес 51.250.14.130
 
-Frontend https://...
+Frontend https://NobodyMaximProject15.nomoredomainsicu.ru
 
-Backend https://...
+Backend https://api.NobodyMaximProject15.nomoredomainsicu.ru
